@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+
+    <div class="historyclass">
+        <a href="history.html"><button class="history">history</button></a>
+    </div>
+    <div class="container">
+        <div class="screen-class">
+            <p class="screen"></p>
+            <button class="clear">clear</button>
+        </div>
+
+        <div class="main-input">
+            <div class="input">
+                <div class="input-sub">
+                    <button   onclick="fill(1)">1</button>
+                    <button  onclick="fill(2)">2</button>
+                    <button  onclick="fill(3)">3</button>
+                    <button  onclick="fill('+')">+</button>
+                </div>
+                <div class="input-sub">
+                    <button  onclick="fill(4)">4</button>
+                    <button  onclick="fill(5)">5</button>
+                    <button  onclick="fill(6)">6</button>
+                    <button  onclick="fill('*')">*</button>
+                </div>
+                <div class="input-sub">
+                    <button  onclick="fill(7)">7</button>
+                    <button  onclick="fill(8)">8</button>
+                    <button  onclick="fill(9)">9</button>
+                    <button  onclick="fill('/')">/</button>
+                </div>
+                <div class="input-sub">
+                    <button  onclick="fill(0)">0</button>
+                    <button  onclick="fill('00')">00</button ><button  onclick="fill('.')">.</button>
+                    <button class="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js" type="module"></script>
+</body>
+</html>
