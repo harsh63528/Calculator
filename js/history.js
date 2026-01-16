@@ -7,7 +7,7 @@
 
 
     if (dataStore.length==0) {
-         history.innerHTML='no history';
+         history.innerHTML=`<p class='empty-message'>no history</p`;
     }
     else{
  load();
@@ -17,7 +17,7 @@
     //eventlistener
     arrayClear.addEventListener('click',()=>{
         clearData();
-        history.innerHTML=`no history`;
+        history.innerHTML=`<p class='empty-message'>no history</p>`;
     })
 
 

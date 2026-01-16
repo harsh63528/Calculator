@@ -1,0 +1,86 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* History Container */
+.history {
+  background-color: #ecf0f1;
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Hide Scrollbar (Optional) */
+.history::-webkit-scrollbar {
+  display: none;
+}
+.history {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* History Items */
+/* Empty History Message */
+.empty-message {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.history p,
+.history div {
+  background-color: #bdc3c7;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #2c3e50;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+/* Clear Button */
+.clear {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
